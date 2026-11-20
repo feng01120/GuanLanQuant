@@ -1,0 +1,21 @@
+{
+  "id": "datasource.official",
+  "name": "官方披露与宏观",
+  "version": "1.0.0",
+  "api": "guanlan-1",
+  "kind": "datasource",
+  "capabilities": [
+    "announcement.cninfo",
+    "macro.statistics",
+    "fx.official"
+  ],
+  "entry": "app.data.sources:OfficialSource",
+  "priority": 5,
+  "authority": "official",
+  "description": "巨潮资讯公告、国家统计局 CPI/PMI/PPI/GDP/M2、外汇交易中心人民币汇率。",
+  "endpoints": [
+    "www.cninfo.com.cn/new/hisAnnouncement/query",
+    "datacenter-web.eastmoney.com/api/data/v1/get",
+    "www.chinamoney.com.cn/ags/ms/cm-u-bk-ccpr/CcprHisNew"
+  ]
+}

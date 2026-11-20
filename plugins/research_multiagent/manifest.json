@@ -1,0 +1,12 @@
+{
+  "id": "research.multiagent",
+  "name": "多智能体研判",
+  "version": "1.0.0",
+  "api": "guanlan-1",
+  "kind": "research",
+  "capabilities": ["research.views", "research.debate", "research.risk"],
+  "entry": "app.research.agents",
+  "priority": 10,
+  "authority": "internal",
+  "description": "技术/资金/估值/情绪/宏观/人文分析师 → 多空研究员 → 交易员 → 风控官。"
+}

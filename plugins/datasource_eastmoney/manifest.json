@@ -1,0 +1,31 @@
+{
+  "id": "datasource.eastmoney",
+  "name": "东方财富公开行情",
+  "version": "1.0.0",
+  "api": "guanlan-1",
+  "kind": "datasource",
+  "capabilities": [
+    "quote.realtime",
+    "bar.daily",
+    "bar.intraday",
+    "moneyflow",
+    "market.breadth",
+    "board.list",
+    "limit.pool",
+    "stock.list",
+    "stock.search",
+    "news.market",
+    "announcement.stock"
+  ],
+  "entry": "app.data.sources:EastmoneySource",
+  "priority": 10,
+  "authority": "public",
+  "description": "A 股行情、日/分钟 K 线、资金流、板块、涨停池与资讯的主力数据通道。",
+  "endpoints": [
+    "push2.eastmoney.com/api/qt/ulist.np/get",
+    "push2his.eastmoney.com/api/qt/stock/kline/get",
+    "push2.eastmoney.com/api/qt/stock/fflow/kline/get",
+    "push2ex.eastmoney.com/getTopicZTPool",
+    "np-listapi.eastmoney.com/comm/web/getNewsByColumns"
+  ]
+}

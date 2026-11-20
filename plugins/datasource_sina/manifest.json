@@ -1,0 +1,13 @@
+{
+  "id": "datasource.sina",
+  "name": "新浪行情备用通道",
+  "version": "1.0.0",
+  "api": "guanlan-1",
+  "kind": "datasource",
+  "capabilities": ["quote.realtime", "bar.daily"],
+  "entry": "app.data.sources:SinaSource",
+  "priority": 70,
+  "authority": "public",
+  "description": "实时报价与日线备用通道；东财/腾讯失败时提供报价、历史 K 线与行业板块。",
+  "endpoints": ["hq.sinajs.cn/list", "quotes.sina.cn/cn/api/json_v2.php/CN_MarketDataService.getKLineData", "vip.stock.finance.sina.com.cn/q/view/newSinaHy.php"]
+}

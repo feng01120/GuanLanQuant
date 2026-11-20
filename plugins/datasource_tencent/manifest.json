@@ -1,0 +1,13 @@
+{
+  "id": "datasource.tencent",
+  "name": "腾讯行情备用通道",
+  "version": "1.0.0",
+  "api": "guanlan-1",
+  "kind": "datasource",
+  "capabilities": ["quote.realtime", "bar.daily"],
+  "entry": "app.data.sources:TencentSource",
+  "priority": 40,
+  "authority": "public",
+  "description": "主力行情通道失败时的备用报价与日线。",
+  "endpoints": ["qt.gtimg.cn/q=", "web.ifzq.gtimg.cn/appstock/app/fqkline/get"]
+}

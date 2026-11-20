@@ -1,0 +1,12 @@
+{
+  "id": "model.short",
+  "name": "短周期集成模型",
+  "version": "1.0.0",
+  "api": "guanlan-1",
+  "kind": "model",
+  "capabilities": ["model.short.t1", "model.short.t2"],
+  "entry": "app.models.short_term",
+  "priority": 10,
+  "authority": "internal",
+  "description": "Ridge + Logistic + 历史形态类比；前 70% 样本外定权，后 30% 样本外评估。"
+}

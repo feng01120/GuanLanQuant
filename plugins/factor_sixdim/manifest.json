@@ -1,0 +1,12 @@
+{
+  "id": "factor.sixdim",
+  "name": "六维因子组",
+  "version": "1.0.0",
+  "api": "guanlan-1",
+  "kind": "factor",
+  "capabilities": ["factor.fund", "factor.valuation", "factor.sentiment", "factor.macro", "factor.humanities", "factor.fusion"],
+  "entry": "app.features.fusion",
+  "priority": 20,
+  "authority": "internal",
+  "description": "资金、估值、情绪、宏观、人文五类因子与加权融合。"
+}

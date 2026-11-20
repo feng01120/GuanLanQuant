@@ -1,0 +1,12 @@
+{
+  "id": "model.long",
+  "name": "长周期蒙特卡洛",
+  "version": "1.0.0",
+  "api": "guanlan-1",
+  "kind": "model",
+  "capabilities": ["model.long.week", "model.long.month"],
+  "entry": "app.models.long_term",
+  "priority": 10,
+  "authority": "internal",
+  "description": "六维评分 + EWMA 波动率 + bootstrap 残差模拟 25 个交易日，输出 5/10/20 日分布。"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "strategy.portfolio",
+  "name": "组合与风控",
+  "version": "1.0.0",
+  "api": "guanlan-1",
+  "kind": "strategy",
+  "capabilities": ["portfolio.analytics", "portfolio.rebalance", "portfolio.dryrun"],
+  "entry": "app.services.portfolio",
+  "priority": 10,
+  "authority": "internal",
+  "description": "模拟持仓、组合波动/VaR/回撤、再平衡建议与 dry-run 审批门；不接实盘。"
+}

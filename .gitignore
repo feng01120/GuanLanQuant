@@ -1,0 +1,38 @@
+# 观澜 QuantDesk · Git 忽略规则
+# 只提交源码、插件、资源与文档；运行数据、构建产物、日志和缓存不入库。
+
+# Python 环境与缓存
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# PyInstaller / 打包产物
+build/
+build-*/
+build*.log
+dist/
+dist-*/
+GuanLanQuant-Windows-x64/
+GuanLanQuant-Windows-x64*.zip
+*.exe
+
+# 运行时数据（数据库、行情缓存、日志、报告）
+data/
+logs/
+reports/
+*.db
+*.db-wal
+*.db-shm
+*.log
+
+# 本地环境与编辑器
+.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,12 @@
+{
+  "id": "factor.technical",
+  "name": "技术因子引擎",
+  "version": "1.0.0",
+  "api": "guanlan-1",
+  "kind": "factor",
+  "capabilities": ["factor.technical"],
+  "entry": "app.features.technical",
+  "priority": 10,
+  "authority": "internal",
+  "description": "均线、MACD、RSI、KDJ、布林、ATR、量能与支撑压力。"
+}
